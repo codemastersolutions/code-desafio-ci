@@ -1,7 +1,7 @@
 steps:
   -   id: 'Run go'
       name: 'golang'
-      args: ['go', 'run', 'main/main.go']
+      args: ['go', 'run', 'main.go']
 #
 #  -   id: 'Run composer install'
 #      name: 'gcr.io/cloud-builders/docker'
