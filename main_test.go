@@ -13,15 +13,15 @@ type Int2IntTestPair struct {
 
 func TestSoma(t *testing.T) {
 	var tests = []Int2IntTestPair{
-		{0, 1, 2},
 		{1, 1, 2},
+		{6, 4, 10},
 	}
 
 	for _, pair := range tests {
 		result := soma(pair.input1, pair.input2)
 		if !reflect.DeepEqual(result, pair.output) {
 			t.Errorf(
-				"For sum of %v and %v:\n expected: %v\n but got: %v",
+				"\nFor sum of %v and %v:\nexpected: %v\nbut got: %v",
 				pair.input1, pair.input2, pair.output, result)
 		}
 	}

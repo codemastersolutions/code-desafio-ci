@@ -1,24 +1,8 @@
 steps:
+  -   id: 'Run tests'
+      name: 'golang'
+      args: ['go', 'test']
+
   -   id: 'Run go'
       name: 'golang'
       args: ['go', 'run', 'main.go']
-#
-#  -   id: 'Run composer install'
-#      name: 'gcr.io/cloud-builders/docker'
-#      args: ['exec','-t','app','composer','install']
-#
-#  -   id: 'Copy .env file'
-#      name: 'gcr.io/cloud-builders/docker'
-#      args: ['exec','-t','app','cp','.env.example','.env']
-#
-#  -   id: 'Run key:generate command'
-#      name: 'gcr.io/cloud-builders/docker'
-#      args: ['exec','-t','app','php','/var/www/artisan','key:generate']
-#
-#  -   id: 'Run migrate command'
-#      name: 'gcr.io/cloud-builders/docker'
-#      args: ['exec','-t','app','php','/var/www/artisan','migrate']
-#
-#  -   id: 'Run PHPUnit'
-#      name: 'gcr.io/cloud-builders/docker'
-#      args: ['exec','-t','app','php','/var/www/vendor/bin/phpunit','-c','/var/www/phpunit.xml']
