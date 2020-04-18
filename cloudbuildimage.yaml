@@ -11,5 +11,4 @@ steps:
 images:
   - 'gcr.io/$PROJECT_ID/code-desafio-ci:latest'
   - 'gcr.io/$PROJECT_ID/code-desafio-ci:alpine'
-
 tags: ['cloud-builders-community']
