@@ -1,11 +1,11 @@
 steps:
-  - name: 'golang'
+  - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'build'
       - '-t'
-      - 'gcr.io/$PROJECT_ID/golang:latest'
+      - 'gcr.io/$PROJECT_ID/code-desafio-ci:latest'
       - '-t'
-      - 'gcr.io/$PROJECT_ID/golang:alpine'
+      - 'gcr.io/$PROJECT_ID/code-desafio-ci:alpine'
       - '.'
 
 images:
