@@ -8,6 +8,9 @@ steps:
       - 'gcr.io/$PROJECT_ID/code-desafio-ci:alpine'
       - '.'
 
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ["/app/main"]
+
 images:
   - 'gcr.io/$PROJECT_ID/code-desafio-ci:latest'
   - 'gcr.io/$PROJECT_ID/code-desafio-ci:alpine'
