@@ -20,8 +20,7 @@ func TestSoma(t *testing.T) {
 	for _, pair := range tests {
 		result := soma(pair.input1, pair.input2)
 		if !reflect.DeepEqual(result, pair.output) {
-			t.Errorf(
-				"\nFor sum of %v and %v:\nexpected: %v\nbut got: %v",
+			t.Errorf("\nSum of %v and %v:\nexpected: %v\nbut got: %v",
 				pair.input1, pair.input2, pair.output, result)
 		}
 	}
