@@ -1,9 +1,7 @@
 steps:
-  - name: 'gcr.io/cloud-builders/go'
+  - name: 'go'
     args:
       - 'build'
-      - '--build-arg'
-      - 'DOCKER_COMPOSE_VERSION=${_DOCKER_COMPOSE_VERSION}'
       - '-t'
       - 'gcr.io/$PROJECT_ID/go:latest'
       - '-t'
@@ -14,4 +12,4 @@ images:
   - 'gcr.io/$PROJECT_ID/code-desafio-ci:latest'
   - 'gcr.io/$PROJECT_ID/code-desafio-ci:alpine'
 
-#tags: ['cloud-builders-community']
+tags: ['cloud-builders-community']
