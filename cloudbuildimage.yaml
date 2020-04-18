@@ -1,11 +1,11 @@
 steps:
-  - name: 'go'
+  - name: 'golang'
     args:
       - 'build'
       - '-t'
-      - 'gcr.io/$PROJECT_ID/go:latest'
+      - 'gcr.io/$PROJECT_ID/golang:latest'
       - '-t'
-      - 'gcr.io/$PROJECT_ID/go:alpine'
+      - 'gcr.io/$PROJECT_ID/golang:alpine'
       - '.'
 
 images:
